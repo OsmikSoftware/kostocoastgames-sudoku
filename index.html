@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body> 
+<link rel="stylesheet" href="style.css" type="text/css" />
+<h1>Sudoku</h1>
+<button onclick="newGame();">New Game</button>
+<h3>Strikes: <span id="strike_counter"></span></h3>
+<table class="base_numbers">
+<tr>
+	<td id="base_1" draggable="true" ondragstart="drag(event)" class="base_square">1</td>
+	<td id="base_2" draggable="true" ondragstart="drag(event)" class="base_square">2</td>
+	<td id="base_3" draggable="true" ondragstart="drag(event)" class="base_square">3</td>
+	<td id="base_4" draggable="true" ondragstart="drag(event)" class="base_square">4</td>
+	<td id="base_5" draggable="true" ondragstart="drag(event)" class="base_square">5</td>
+	<td id="base_6" draggable="true" ondragstart="drag(event)" class="base_square">6</td>
+	<td id="base_7" draggable="true" ondragstart="drag(event)" class="base_square">7</td>
+	<td id="base_8" draggable="true" ondragstart="drag(event)" class="base_square">8</td>
+	<td id="base_9" draggable="true" ondragstart="drag(event)" class="base_square">9</td>
+</tr>
+</table>
+<table id="sudoku_game"></table>
+<script src="sudoku.js"></script>
+</body>
+</html>
